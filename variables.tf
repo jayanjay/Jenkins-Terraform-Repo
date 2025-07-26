@@ -17,8 +17,8 @@ variable "ami_id" {
 
 variable "tags" {
   description = "Tags for the instance"
-  type        = string
-  default     = "Instance via Jenkins-Vars"
+  type        = map(string)
+  default     = {}
 }
 variable "aws_access_key" {
   description = "AWS access key"
