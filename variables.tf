@@ -24,10 +24,10 @@ variable "tags" {
 variable "aws_access_key" {
   description = "AWS access key"
   type        = string
-  default     = "AKIAV6SP6Y3YIG5TPRRZ"
+  default     = "AKIAV6SP6Y3YKHFUKFGT"
 }
 variable "aws_secret_key" {
   description = "AWS access key"
   type        = string
-  default     = "9xJvlR1PER7oRBfE/9aBUancwAUDhexgCPDe8ZVQ"
+  default     = "TrXMAtMNwgkMpCPp0XTVHdlQgXs3bD+PKHQje1EA"
 }
