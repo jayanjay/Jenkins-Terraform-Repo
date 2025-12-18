@@ -36,9 +36,9 @@ jobs:
           aws-region: ap-south-1
 
       # 4. Terraform Init
-      - name: Terraform Init
-        working-directory: ${{ env.TF_WORKING_DIR }}
-        run: terraform init
+      - name: Terraform Init (S3 Backend)
+        run: terraform init -migrate-state -reconfigure
+
 
       # 5. Terraform Validate
       - name: Terraform Validate
