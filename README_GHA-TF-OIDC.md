@@ -52,15 +52,18 @@ aws s3api put-bucket-versioning \
 
 2nd run - 
 ----------------
-aws s3api put-bucket-encryption \
-  --bucket jayanjay-terraform-state \
-  --server-side-encryption-configuration '{
-    "Rules":[{
-      "ApplyServerSideEncryptionByDefault":{
-        "SSEAlgorithm":"AES256"
+Create a file called encryption.json and add below command - 
+{
+  "Rules": [
+    {
+      "ApplyServerSideEncryptionByDefault": {
+        "SSEAlgorithm": "AES256"
       }
-    }]
-  }'
+    }
+  ]
+}
+Then run :
+aws s3api put-bucket-encryption --bucket jayanjay-terraform-state --server-side-encryption-configuration file://encryption.json
 
 Step 5 : Create DynamoDB Table for Locking
 --------------------------------------------------
