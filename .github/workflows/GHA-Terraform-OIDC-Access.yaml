@@ -40,7 +40,7 @@ jobs:
 
       # 4. Terraform Init
       - name: Terraform Init (S3 Backend)
-        run: terraform init -migrate-state -reconfigure
+        run: terraform init -migrate-state
 
 
       # 5. Terraform Validate
