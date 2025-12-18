@@ -1,4 +1,4 @@
-name: Terraform CI/CD
+name: Terraform CI/CD With Basic Setup-Secrets in Env
 
 on:
   pull_request:
@@ -13,7 +13,7 @@ env:
   TF_WORKING_DIR: "."
 
 jobs:
-  terraform:
+  "terraform-job_with_secrets_in_settings" :
     name: Terraform Pipeline
     runs-on: ubuntu-latest
 
