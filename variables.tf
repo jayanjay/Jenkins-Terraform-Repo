@@ -1,7 +1,7 @@
 variable "aws_region" {
   description = "AWS region"
   type        = string
-  default = "ap-south-1"
+  default     = "ap-south-1"
 }
 
 variable "instance_type" {
@@ -13,7 +13,7 @@ variable "instance_type" {
 variable "ami_id" {
   description = "AMI ID to use"
   type        = string
-  default = "ami-025fe52e1f2dc5044"
+  default     = "ami-025fe52e1f2dc5044"
 }
 
 variable "tags" {
