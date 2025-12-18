@@ -16,8 +16,8 @@ env:
   TF_WORKING_DIR: "."
 
 jobs:
-  "terraform-job_with_secrets_in_settings" :
-    name: Terraform Pipeline
+  "terraform-job_with_OIDC" :
+    name: Github-Terraform-OIDC
     runs-on: ubuntu-latest
 
     steps:
